@@ -1,0 +1,13 @@
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+E:\Work\FlyShow\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+E:\Work\FlyShow\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
+E:\Work\FlyShow\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+E:\Work\FlyShow\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Work\FlyShow\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.genruntimeconfig.cache
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+E:\Work\FlyShow\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csprojAssemblyReference.cache

@@ -1,0 +1,15 @@
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.deps.json
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.runtimeconfig.json
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.dll
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\Infrastructure.pdb
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\MongoDB.Bson.dll
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\MongoDB.Driver.Core.dll
+E:\Work\FlyShow\Infrastructure\bin\Release\netcoreapp3.1\MongoDB.Driver.dll
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.csproj.CopyComplete
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.dll
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.pdb
+E:\Work\FlyShow\Infrastructure\obj\Release\netcoreapp3.1\Infrastructure.genruntimeconfig.cache

@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyshowVegetablesAPI</name>
+    </assembly>
+    <members>
+        <member name="M:FlyshowVegetablesAPI.Controllers.AdvertiseController.GetAdvertises(FlyshowVegetablesAPI.Models.Request.Advertise.AdvertiseCondition)">
+            <summary>
+            sssss
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.AdvertiseController.CreateAdvertise(Infrastructure.Entities.Advertise)">
+            <summary>
+            CreateAdvertise
+            </summary>
+            <param name="advertise"></param>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.BulletinController.GetBulletin">
+            <summary>
+            
+            </summary>
+            <returns></returns>8
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.BulletinController.Post(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductController.GetProducts(FlyshowVegetablesAPI.Models.Request.Products.ProductsRequest)">
+            <summary>
+            分頁取得商品列表 (要改大MODEL包小MODEL) 
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductController.GetProductBySerialNo(System.String)">
+            <summary>
+            取得商品資訊
+            </summary>
+            <param name="serialNo">商品序號</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductController.CreateProduct(Infrastructure.Entities.Product)">
+            <summary>
+            新增商品
+            </summary>
+            <param name="product">商品資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductController.UpdateProduct(Infrastructure.Entities.Product)">
+            <summary>
+            編輯商品
+            </summary>
+            <param name="Product">商品資料</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductController.DeleteProduct(System.String)">
+            <summary>
+            刪除商品
+            </summary>
+            <param name="SerialNo">商品序號</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductController.GetCover(System.Collections.Generic.List{Infrastructure.Entities.Product}@)">
+            <summary>
+            只保留第一張圖片當作封面
+            </summary>
+            <param name="products"></param>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductPictureController.GetPicture(System.String,System.Int32)">
+            <summary>
+            Get Picture
+            </summary>
+            <param name="serialNo"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.ProductPictureController.UpdatePictures(FlyshowVegetablesAPI.Models.Products.ProductPicturesCondition)">
+            <summary>
+            Update Pictures
+            </summary>
+            <param name="condition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.PurchaseNotesController.GetPurchaseNotes">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.PurchaseNotesController.UpdatePurchaseNotes(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="purchaseNotes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.SpecialContractStoreController.GetDatas">
+            <summary>
+            Get SpecialContractStore Datas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.SpecialContractStoreController.DeleteData(System.Int32)">
+            <summary>
+            Delete SpecialContractStore Data
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.UserController.GetUser">
+            <summary>
+            TEST
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.UserController.Unregister(System.Int32)">
+            <summary>
+            Unregister
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.UserController.Login(FlyshowVegetablesAPI.Models.Request.LoginRequest)">
+            <summary>
+            Login
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.UserController.ReadUserInfo(System.String)">
+            <summary>
+            ReadUserInfo
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Controllers.UserController.UpdateUserInfo(Infrastructure.Entities.User)">
+            <summary>
+            UpdateUserInfo
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="P:FlyshowVegetablesAPI.Models.Request.LoginRequest.Account">
+            <summary>
+            Login User's Account 
+            </summary>
+        </member>
+        <member name="P:FlyshowVegetablesAPI.Models.Request.LoginRequest.Password">
+            <summary>
+            Login User's Password
+            </summary>
+        </member>
+        <member name="P:FlyshowVegetablesAPI.Models.Request.Products.ProductsRequest.StartItem">
+            <summary>
+            start index
+            </summary>
+        </member>
+        <member name="P:FlyshowVegetablesAPI.Models.Request.Products.ProductsRequest.Length">
+            <summary>
+            which count want to get
+            </summary>
+        </member>
+        <member name="P:FlyshowVegetablesAPI.Models.Request.Products.ProductsRequest.Order">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:FlyshowVegetablesAPI.Models.Request.Products.ProductsRequest.ProductCondition">
+            <summary>
+            condition with product
+            </summary>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.SpecialContractStoreService.GetDatas">
+            <summary>
+            Get All SpecialContractStore
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.SpecialContractStoreService.CreateDatas(Infrastructure.Entities.SpecialContractStore)">
+            <summary>
+            Create SpecialContractStore Datas
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.SpecialContractStoreService.DeleteData(System.Int32)">
+            <summary>
+            Delete SpecialContractStore By ID
+            </summary>
+            <param name="ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.UserService.IsAccountExists(System.String)">
+            <summary>
+            Check account is exists or not
+            </summary>
+            <param name="account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.UserService.CreateUser(Infrastructure.Entities.User)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.UserService.UpdateUser(Infrastructure.Entities.User)">
+            <summary>
+            UpdateUser
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Services.UserService.DeleteUser(System.Int32)">
+            <summary>
+            DeleteUser
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Utilities.CommonUtilities.EncryptToken(System.String,System.DateTime)">
+            <summary>
+            Encrypt Token
+            </summary>
+            <param name="account"></param>
+            <param name="loginTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Utilities.CommonUtilities.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="encrypt">密碼</param>
+            <returns>明碼</returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Utilities.CommonUtilities.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="value">明碼</param>
+            <returns>密碼</returns>
+        </member>
+        <member name="F:FlyshowVegetablesAPI.Utilities.PermissionManager.Role.Admin">
+            <summary>
+            Admin
+            </summary>
+        </member>
+        <member name="F:FlyshowVegetablesAPI.Utilities.PermissionManager.Role.Nomal">
+            <summary>
+            Nomal
+            </summary>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Utilities.PermissionManager.Check(System.String)">
+            <summary>
+            檢查權限
+            </summary>
+            <param name="target">受檢者</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyshowVegetablesAPI.Utilities.TokenValidate.VerifyToken(System.String)">
+            <summary>
+            VerifyToken
+            </summary>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
