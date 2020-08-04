@@ -18,7 +18,20 @@ namespace FlyshowVegetablesAPI.Services
 
         public List<User> GetUser()
         {
-            return _userRepository.GetAll().ToList();
+            return _userRepository.GetAll().Select(x => new User
+            {
+                Address = x.Address,
+                Birthday = x.Birthday,
+                Email = x.Email,
+                Gender = x.Gender,
+                ID = x.ID,
+                Name = x.Name,
+                Phone = x.Phone,
+                Priority = x.Priority,
+                Password = x.Password,
+                Actor = (x.Priority.Equals(74970855)) ? "管理者" : "使用者",
+                Sex = (x.Gender.HasValue && x.Gender.Equals(1)) ? "男" : "女"
+            }).ToList();
         }
 
         /// <summary>
@@ -50,7 +63,7 @@ namespace FlyshowVegetablesAPI.Services
         {
             if (model.Birthday.HasValue)
             {
-                model.Birthday = DateTime.Parse(model.Birthday.Value.ToString("yyyyMMdd HH:mm:ss"));
+                model.Birthday = DateTime.Parse(model.Birthday.Value.ToString("yyyy/MM/dd HH:mm:ss"));
             }
 
             return _userRepository.CreateUser(model);

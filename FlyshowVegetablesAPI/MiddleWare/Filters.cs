@@ -16,6 +16,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -44,8 +45,28 @@ namespace FlyshowVegetablesAPI.MiddleWare
             //string tok = TokenValidate.EncryptToken(acc, extime);
             //bool chk = TokenValidate.VerifyToken(tok);
 
+            var ss = context.HttpContext.Request.Body;
+
+            //using (StreamReader reader = new StreamReader(ss, System.Text.Encoding.UTF8))
+            //{
+            //    var content = reader.ReadToEndAsync();
+
+            //    var obj = Newtonsoft.Json.Linq.JObject.Parse(content);
+
+
+
+            //}
+
             ApiResultModel result = new ApiResultModel();
-            string token = context.HttpContext.Request.Query["Authorization"];
+
+            //from swagger test
+            string token = token = context.HttpContext.Request.Query["Authorization"]; 
+
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                //from client request
+                token = context.HttpContext.Request.Headers.Where(x => x.Key.Equals("Authorization")).FirstOrDefault().Value; 
+            }
 
             if (string.IsNullOrWhiteSpace(token))
             {
@@ -104,7 +125,7 @@ namespace FlyshowVegetablesAPI.MiddleWare
         }
 
         private string[] GetDecryptData(string token)
-        { 
+        {
             return CommonUtilities.Decrypt(token).Split('_');
         }
     }
@@ -151,7 +172,7 @@ namespace FlyshowVegetablesAPI.MiddleWare
                     if (context.HttpContext.Response.StatusCode == (int)HttpStatusCode.OK)
                     {
                         getObject = (Microsoft.AspNetCore.Mvc.ObjectResult)context.Result;
-                        if (getObject.Value != null)
+                        if (getObject != null && getObject.Value != null)
                         {
                             //success
                             result.Code = (int)ApiResultModel.CodeEnum.OK;

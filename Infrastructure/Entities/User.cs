@@ -27,5 +27,11 @@ namespace Infrastructure.Entities
         public string Password { get; set; }
 
         public int? Priority { get; set; }
+
+        [NotMapped]
+        public string Actor { get; set; }
+
+        [NotMapped]
+        public string Sex { get; set; }
     }
 }
